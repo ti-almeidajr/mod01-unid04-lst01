@@ -3,23 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unid03 - Lista01 - Questão05</title>
+    <title>Unid04 - Lista01 - Questão01</title>
     <script type="text/javascript">          
         {  
-            let numeros = [];
-            let inverso = [];
-
-            for (let num = 0; num < 3; num++) 
+            function dobro(num)
                 {
-                    numeros[num] = parseInt(prompt("Digite " + num + " número")) 
+                    let x = num * 2
+                    document.write("O dobro do número: " + num + " é " +x)
                 }
 
-            for (let num = 3; num > 0; num--) 
-                {
-                    inverso[num] = numeros[num - num]
-                }
-            document.write("Números informados: " + numeros.join(" , ") + "<br>")
-            document.write("Ordem inversa: " + inverso)
+            let val = 10
+            dobro(val)
         }
     </script> 
 
