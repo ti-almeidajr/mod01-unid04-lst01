@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unid03 - Lista01 - Questão05</title>
+    <script type="text/javascript">          
+        {  
+            let numeros = [];
+            let inverso = [];
+
+            for (let num = 0; num < 3; num++) 
+                {
+                    numeros[num] = parseInt(prompt("Digite " + num + " número")) 
+                }
+
+            for (let num = 3; num > 0; num--) 
+                {
+                    inverso[num] = numeros[num - num]
+                }
+            document.write("Números informados: " + numeros.join(" , ") + "<br>")
+            document.write("Ordem inversa: " + inverso)
+        }
+    </script> 
+
+</head>
+<body>
+</body>
+</html>
