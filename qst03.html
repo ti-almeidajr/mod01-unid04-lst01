@@ -1,19 +1,33 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Unid04 - Lista01 - Questão01</title>
-<script type="text/javascript">          
-    {  
-        function volEsfera(x)
-            {
-                let volume = 4/3 * pi * raio * raio * raio
-                document.write("O volume da esfera com raio :" + x + "Equivale a: " + volume)
-            }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista 03 - Questão 03</title>
 
-        let raio = parseInt
-        volEsfera()
-    }
-</script> 
+    <script type="text/javascript">  
+         {  
+            function volEsfera()
+                {
+                    const pi = 3.14159265
+                    let raio = document.getElementById("texto").value;
+                    let volume = (4/3) * pi * Math.pow(raio,3)
+                    document.getElementById("resultado").innerHTML = "O volume da esfera é " + volume
+                }
+        }        
+    </script>
 
 </head>
 <body>
+    <form>
+        <fieldset>
+            <legend>Questão 03</legend>
+                <label for="texto">Valor do Raio: </label> <input type="text" id="texto" size="100" maxlength="100">
+                <input type="button" value="Contar caracteres" onclick="volEsfera()"><br><br>
+                <fieldset>
+                    <legend>RESULTADO</legend>
+                        <p id="resultado">  </p>
+                </fieldset>
+        </fieldset>
+    </form>
 </body>
-</html
+</html>
