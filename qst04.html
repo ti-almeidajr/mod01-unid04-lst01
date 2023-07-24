@@ -10,12 +10,14 @@
                 {
                     let hr = h * 3.600
                     let mn = m * 60
-                    document.write(+ h + " horas equivalem a " + hr + " segundos <br>")
-                    document.write(+ m + " minutos equivalem a " + mn + " segundos")
+                    let sg = s
+                    document.write(+ h + " Horas equivalem a " + hr + " Segundos <br>")
+                    document.write(+ m + " Minutos equivalem a " + mn + " Segundos <br>")
+                    document.write(+ s + " Segundos equivalem a " + sg + " Segundos")
                 }
-            let hora = 2
-            let minutos = 15
-            let segundos = 12
+            let hora = 10
+            let minutos = 30
+            let segundos = 15
             converter(hora, minutos, segundos)
 
         }        
