@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unid04 - Lista01 - Questão07</title>
+    
+    <script type="text/javascript">          
+        {  
+            function primo() {
+                let contDivisores = 0
+                let num = parseInt(prompt("Informe um número"))
+
+                 for (let i = 0; i < num; i++) {
+                        if (num % i == 0) {
+                            contDivisores++
+                        }
+                }
+
+                if (contDivisores == 2) {
+                        document.write("O número é primo")       
+                } else {
+                    document.write("O número não é primo")
+                }
+            }
+            primo()
+            //document.getElementById("resultado").innerHTML = "O número informado é PRIMO"
+        }
+    </script> 
+
+</head>
+<body>
+    
+</body>
+</html>
