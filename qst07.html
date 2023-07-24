@@ -7,10 +7,9 @@
     
     <script type="text/javascript">          
         {  
-            function primo() {
+            function primos() {
                 let contDivisores = 0
-                let primos = []
-                let num = parseInt(prompt("Informe um número"))
+                let num = parseInt(document.getElementById("num").value)
 
                 for (let i = 1; i <= num; i++) {
                     if (num % i == 0) {
@@ -18,19 +17,29 @@
                     }
                 }
                 if (contDivisores == 2) {
-                        document.write("O número é primo")       
+                        document.getElementById("resultado").innerHTML = "O número informado É PRIMO"      
                 } else {
-                    document.write("O número não é primo")
+                    document.getElementById("resultado").innerHTML = "O número informado NÃO É PRIMO" 
                 }
             }
-            primo()
+            primos()
             
-            //document.getElementById("resultado").innerHTML = "O número informado é PRIMO"
+            
         }
     </script> 
 
 </head>
 <body>
-    
+    <form>
+        <fieldset>
+            <legend>Questão 07 - Números Primos</legend><br>
+            <label for="num">Digite um número: </label> <input type="text" id="num" name="" value="" size="2" maxlength="3">
+            <input type="button" value="Verificar Número" onclick="primos()"><br><br>
+            <fieldset>
+                <legend>RESULTADO</legend>
+                    <p id="resultado">  </p>
+            </fieldset>
+        </fieldset>
+    </form><br>
 </body>
 </html>
