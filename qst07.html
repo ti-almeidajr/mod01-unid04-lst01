@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unid04 - Lista01 - Questão07</title>
+    <title>Unid04 - Lista01 - Questão07 - Números Primos</title>
     
     <script type="text/javascript">          
         {  
             function primo() {
                 let contDivisores = 0
+                let primos = []
                 let num = parseInt(prompt("Informe um número"))
 
-                 for (let i = 1; i <= num; i++) {
-                        if (num % i == 0) {
-                            contDivisores++
-                        }
+                for (let i = 1; i <= num; i++) {
+                    if (num % i == 0) {
+                        contDivisores++
+                    }
                 }
+
+                for (let p = 1; p < num; p++) {
+                        if (num % i == 0) {
+                            primos[p] = num
+                        }
+
+               
 
                 if (contDivisores == 2) {
                         document.write("O número é primo")       
@@ -24,6 +32,7 @@
                 }
             }
             primo()
+            document.write
             //document.getElementById("resultado").innerHTML = "O número informado é PRIMO"
         }
     </script> 
