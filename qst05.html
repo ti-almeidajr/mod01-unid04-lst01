@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unid04 - Lista01 - Questão07 - Números Primos</title>
+    
+    <script type="text/javascript">          
+        {  
+            function triangulos() {
+                let lado1 = parseInt(document.getElementById("num").value)
+
+                /*for (let i = 1; i <= num; i++) {
+                    if (num % i == 0) {
+                        contDivisores++
+                    }
+                }
+                if (contDivisores == 2) {
+                        document.getElementById("resultado").innerHTML = "O número " + num + " É PRIMO"      
+                } else {
+                    document.getElementById("resultado").innerHTML = "O número " + num + " NÃO É PRIMO"      
+                } 
+            }*/
+            primos()
+            
+            
+        }
+    </script> 
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Questão 05 - Tipo de Triângulo</legend><br>
+            <label for="lado1">Valor lado 01: </label> <input type="text" id="lado1" name="" value="" size="2" maxlength="3">
+            <label for="lado2">Valor lado 02 </label> <input type="text" id="lado2" name="" value="" size="2" maxlength="3">
+            <label for="lado2">Valor lado 03 </label> <input type="text" id="lado3" name="" value="" size="2" maxlength="3">
+            <input type="button" value="Verificar Número" onclick="triangulos()"><br><br>
+            <fieldset>
+                <legend>RESULTADO</legend>
+                    <p id="resultado">  </p>
+            </fieldset>
+        </fieldset>
+    </form><br>
+</body>
+</html>
